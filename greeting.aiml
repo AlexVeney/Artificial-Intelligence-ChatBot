@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- initial greeting from user to chatbot -->
+	<category>
+	    <pattern>HI</pattern>
+	    <template>
+	    Hi my name is Career Bot!
+	    I'm here to help you discover possible careers after graduation.
+	    What is your name?</template>
+    </category>
+    <!-- alternate greetings from user -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+	<category>
+	    <pattern>MY NAME IS *</pattern>
+	    <that>What is your name</that>
+	    <template>
+	        <think><set name="topic">discover discipline</set></think>
+	        Nice to meet you <set name="studentname"><star index="1"/></set>!
+	        Are you ready to get started?
+	    </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <that>What is your name</that>
+        <template><srai>My name is <star index="1"/></srai></template>
+    </category>
+</aiml>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="discover discipline">
+	<category>
+	    <pattern>YES</pattern>
+	    <template>
+	        Lets get to it.
+	           <ul>
+	               <li>A. Software Development</li>
+	               <li>B. Networking</li>
+	               <li>C. Data Science</li>
+	               <li>D. Information Technology</li>
+
+               </ul>
+            Which computing category aligns with your career discipline preference?
+	    </template>
+    </category>
+    <category>
+        <that>_ WHICH COMPUTING CATEGORY _</that>
+        <pattern>*</pattern>
+        <template>
+            <think><set name="answer"><star index="1"/></set></think> 
+            <condition name="answer" value="A">
+                <think><set name="topic">Software Development</set></think>
+                <think><set name="discipline">Software Development</set></think>
+            </condition>
+            <condition name="answer" value="B">
+                <think><set name="topic">Networking</set></think>
+                <think><set name="discipline">Networking</set></think>
+            </condition>
+            <condition name="answer" value="C">
+                <think><set name="topic">Data Science</set></think>
+                <think><set name="discipline">Data Science</set></think>
+            </condition>
+             <condition name="answer" value="D">
+                <think><set name="topic">Information Technology</set></think>
+                <think><set name="discipline">Information Technology</set></think>
+            </condition>
+            <get name="discipline"/> is a great field! To learn more about this 
+            field enter 'Tell me more'
+        </template>
+    </category>
+    </topic>
+</aiml>

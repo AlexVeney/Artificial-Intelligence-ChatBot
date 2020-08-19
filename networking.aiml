@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="Networking">
+    <category>
+        <pattern>TELL ME MORE</pattern>
+        <template>
+            Networking connects our technology together this includes computers
+            that are in the same building and computers on different continents. 
+            Without the study and implementation of networking the internet 
+            would not be what it is today. 
+            Within the Networking field there are many careers to pursue. 
+            Well-known professions include Network Architects and 
+            Network Administrators. Which career would you like to know more about?
+        </template>
+    </category>
+	<category>
+	    <pattern>NETWORK ADMINISTRATOR</pattern>
+	    <template>
+	        Network Administrators setup, maintain and upgrade a companies networks
+	        (WAN, LAN). In addition to maintining networks Network Administrators also
+	        work to ensure the security of the network and upkeep of the computer
+	        systems on the network.
+	    </template>
+    </category>
+    <category>
+        <pattern>ADMIN</pattern>
+        <template><srai>NETWORK ADMINISTRATOR</srai></template>
+    </category>
+    <category>
+	    <pattern>HOW MUCH DO NETWORK ADMINISTRATORS MAKE</pattern>
+	    <template>
+	        Network Administrators Median Pay:
+	        $83,510 per year
+	        
+	        Source: ("Network and Computer Systems Administrators," 2020)
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHAT SKILLS DO NETWORK ADMINISTRATORS NEED</pattern>
+	    <template>
+	        Network Administrators need to possess knowledge of 
+	        computer systems and computer security in addition to networking
+	        knowledge. Oftentimes network admins
+	        work with systems by scripting languages. Certifications in
+	        Microsoft and Cisco are also needed.
+	    </template>
+    </category>
+	<category>
+	    <pattern>NETWORK ARCHITECT</pattern>
+	    <template>
+	        According to the BLS, "computer network architects...
+            Create plans and layouts for data communication networks
+            Present plans to management and explain why they are in the 
+            organization’s best interest to pursue them"
+            and "Network architects also predict future network needs by analyzing
+            current data traffic and estimating how growth will affect the network"
+            ("Network and Computer Systems Administrators," 2020)."
+	    </template>
+	</category>
+	<category>
+        <pattern>ARCHITECT</pattern>
+        <template><srai>NETWORK ARCHITECT</srai></template>
+    </category>
+	<category>
+    	<pattern>HOW MUCH DO NETWORK ARCHITECTS MAKE</pattern>
+	    <template>
+	        Network Architect Median Pay:
+	        $112,690 per year
+	        
+	        Source: ("Computer Network Architects," 2020)
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHAT SKILLS DO NETWORK ARCHITECTS NEED</pattern>
+	    <template>
+	        According to the BLS, Network Architects need to posses the skills
+	        of a Network Admin (listed below) and they also must have skills in Business
+	        Administration due to the need for them to work with higher management
+	        to make large scale decisions about a company's network design and
+	        the integration of new technology ("Computer Network Architects," 2020).
+	        
+	        Network Admin Skills:
+	        Network Admins need to possess knowledge of 
+	        computer systems and computer security in addition to networking
+	        knowledge. Oftentimes network admins
+	        work with systems by scripting languages. Certifications in
+	        Microsoft and Cisco are also needed.
+	    </template>
+	</category>
+    <category>
+	    <pattern>HOW MUCH ARE NETWORK * PAID</pattern>
+	    <template>
+            <srai>HOW MUCH DO NETWORK <star index="1"/> MAKE</srai>
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHICH SKILLS ARE NEEDED TO BE A NETWORK *</pattern>
+	    <template>
+            <srai>WHAT SKILLS DO NETWORK <star index="1"/>S NEED</srai>
+	    </template>
+    </category>
+    </topic>
+    <category>
+	    <pattern>I WANT TO LEARN ABOUT OTHER CAREERS</pattern>
+	    <template>
+	        <think><set name="topic">discover discipline</set></think>
+            <srai>YES</srai>
+	    </template>
+    </category>
+</aiml>

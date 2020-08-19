@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<topic name="Data Science">
+    <category>
+        <pattern>TELL ME MORE</pattern>
+        <template>
+            The Data Science field has gained a lot of popularity in the last few years.
+            Data Science is where Computer Science, Math and Business come together.
+             Would you like to learn more about Data Analysts?
+        </template>
+    </category>
+	<category>
+	    <pattern>YES</pattern>
+	    <template>
+	        Data Analysts gather, organize and make sense
+            of all the data around us. They turn data into information that companies
+            and researchers can use.
+	    </template>
+    </category>
+    <category>
+	    <pattern>HOW MUCH DO DATA ANALYSTS MAKE</pattern>
+	    <template>
+	        Data Analysts Median Pay:
+	        $60,562 per year
+	        
+	        Source: ("Salary: Data Analyst," 2020)
+	    </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE PAY FOR *</pattern>
+        <template><srai>HOW MUCH DO <star index="1"/> MAKE</srai></template>
+    </category>
+    <category>
+    	<pattern>WHAT SKILLS DO DATA ANALYSTS NEED</pattern>
+	    <template>
+	        Data Analysts need to have strong skills in using
+	        Python, R and algorithms to handle data. They also need to
+	        have a strong understanding of business.
+	    </template>
+    </category>
+        <category>
+        <pattern>WHAT SKILLS DO I NEED TO BECOME A *</pattern>
+        <template><srai>WHAT SKILLS DO <star index = "1"/>S NEED</srai></template>
+    </category>
+    </topic>
+    <category>
+	    <pattern>I WANT TO LEARN ABOUT OTHER CAREERS</pattern>
+	    <template>
+	        <think><set name="topic">discover discipline</set></think>
+            <srai>YES</srai>
+	    </template>
+    </category>
+</aiml>

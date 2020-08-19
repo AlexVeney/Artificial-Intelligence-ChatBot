@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<topic name="Software Development">
+    <category>
+        <pattern>TELL ME MORE</pattern>
+        <template>
+            Software Development is a vast field that consists 
+            of other subfields. The evergrowning need for software to make our
+            lives easier and to support the changes in technology creates the never-ending
+            need for new and experienced talent in the Software Development field.
+            Computer Programmers are the people who create the code for the software
+            that runs the tech world. Two types of
+            Computer Programmers are FrontEnd Developers and BackEnd Developers.
+            Which career would you like to know more about?
+        </template>
+    </category>
+	<category>
+	    <pattern>FRONTEND DEVELOPER</pattern>
+	    <template>
+	        Front-End Developers work to ensure that company websites are easy 
+	        to navigate and aesthetically pleasing for users. In addition to 
+	        writing code to create a functional user interface they also implement
+	        and adjust visual elements.To learn more about Front-End Developers
+	        feel free to ask about the starting pay and skills needed for the job.
+	    </template>
+    </category>
+    <category>
+    	<pattern>HOW MUCH DO FRONTEND DEVELOPERS MAKE</pattern>
+	    <template>
+	        Frontend Developer Median Pay:
+	        $73,760 per year
+	        
+	        Source: ("Web Developers," 2020)
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHAT SKILLS DO FRONTEND DEVELOPERS NEED</pattern>
+	    <template>
+	        According to the BLS Occupational Outlook Handbook, Front-End/Web Developers 
+	        "need to have a thorough understanding of HTML programming. Many 
+	        employers also want developers to understand other programming 
+	        languages, such as JavaScript or SQL, and have knowledge of 
+	        multimedia publishing tools, such as Flash" ("Web Developers," 2020).
+	    </template>
+    </category>
+	<category>
+	    <pattern>BACKEND DEVELOPER</pattern>
+	    <template>
+	        Back-End Developers work on code used for the background processes of
+	        a website and/or application. They ensure that data from datbases are
+	        available for the front-end to work with. To learn more about Back-End Developers
+	        feel free to ask about the starting pay and skills needed for the job.
+	    </template>
+	</category>
+	<category>
+	    <pattern>HOW MUCH DO BACKEND DEVELOPERS MAKE</pattern>
+	    <template>
+	        Backend Developer Median Pay:
+	        $101,619 per year
+	        
+	        Source: ("Salary: Backend Developer", 2020)
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHAT SKILLS DO BACKEND DEVELOPERS NEED</pattern>
+	    <template>
+	        According to GeeksforGeeks.org, a popular website for tech infomation, 
+	        Backend Developers must be skilled in "manipulating database, different kind of 
+	        APIs, the architecture of a system, scripting, etc" (Upadhyay, 2019).
+	    </template>
+    </category>
+    <category>
+	    <pattern>HOW MUCH ARE * DEVELOPERS PAID</pattern>
+	    <template>
+            <srai>HOW MUCH DO <star index="1"/> DEVELOPERS MAKE</srai>
+	    </template>
+    </category>
+    <category>
+	    <pattern>WHICH SKILLS ARE NEEDED TO BE A * DEVELOPER</pattern>
+	    <template>
+            <srai>WHAT SKILLS DO <star index="1"/> DEVELOPERS NEED</srai>
+	    </template>
+    </category>
+    </topic>
+    <category>
+	    <pattern>I WANT TO LEARN ABOUT OTHER CAREERS</pattern>
+	    <template>
+	        <think><set name="topic">discover discipline</set></think>
+            <srai>YES</srai>
+	    </template>
+    </category>
+</aiml>

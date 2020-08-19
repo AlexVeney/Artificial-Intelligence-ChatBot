@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<topic name="Information Technology">
+    <category>
+        <pattern>TELL ME MORE</pattern>
+        <template>
+            The IT field is a broad field which include careers like
+            hardware repair, mobile device troubleshooting and help desk analysts.
+            A career that may be of interest is a Computer Support
+            Specialist. Would you be interested in learning more?
+        </template>
+    </category>
+	<category>
+	    <pattern>YES</pattern>
+	    <template>
+	        According to the BLS, Computer Support Specialists "Pay attention to customers’ 
+	        descriptions of their computer problems,
+            Ask customers questions to properly diagnose the problem,
+            Walk customers through the recommended problem-solving steps,
+            Set up or repair computer equipment and related devices and more" 
+            ("Computer Support Specialists ," 2020).
+	    </template>
+    </category>
+    <category>
+	    <pattern>HOW MUCH DO COMPUTER SUPPORT SPECIALISTS MAKE</pattern>
+	    <template>
+	        Computer Support Specialist Median Pay:
+	        $54,760 per year
+	        
+	        Source: ("Computer Support Specialists ," 2020)
+	    </template>
+    </category>
+    <category>
+        <pattern>WHAT ARE * PAID</pattern>
+        <template><srai>HOW MUCH DO <star index="1"/> MAKE</srai></template>
+    </category>
+    <category>
+    	<pattern>WHAT SKILLS DO COMPUTER SUPPORT SPECIALISTS NEED</pattern>
+	    <template>
+	        Beyond possessing manufacturer specific knowledge obtained by certifications
+	        ,computer support specialist must have great customer service skills,
+	        listening skills, and problem solving skills.
+	    </template>
+    </category>
+        <category>
+        <pattern>WHAT SKILLS DO I NEED TO BE A *</pattern>
+        <template><srai>WHAT SKILLS DO <star index="1"/>S NEED</srai></template>
+    </category>
+    </topic>
+    <category>
+	    <pattern>I WANT TO LEARN ABOUT OTHER CAREERS</pattern>
+	    <template>
+	        <think><set name="topic">discover discipline</set></think>
+            <srai>YES</srai>
+	    </template>
+    </category>
+</aiml>
